@@ -1,3 +1,4 @@
+import streamlit as st
 uploaded_file = st.file_uploader("Choose an image file", accept_multiple_files=False, label_visibility='hidden')
 if uploaded_file is not None:
   # Convert image base64 string into hex 
