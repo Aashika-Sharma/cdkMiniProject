@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import uuid
 import base64
-from snowflake.connector import connect, ProgrammingError
 
 # Function to convert file to base64
 def file_to_base64(file):
