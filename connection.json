@@ -1,0 +1,9 @@
+{
+  "account"  : "HX27359",
+  "user"     : "AASHIKA2ND",
+  "password" : "Aashika@2003"
+  "role"     : "ORGADMIN",
+  "warehouse": "MINIPROJECT",
+  "database" : "miniProjectDB",
+  "schema"   : "MYSCHEMA"
+}
