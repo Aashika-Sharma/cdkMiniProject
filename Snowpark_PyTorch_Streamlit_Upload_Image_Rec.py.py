@@ -1,3 +1,7 @@
+# Snowpark for Python Developer Guide: https://docs.snowflake.com/en/developer-guide/snowpark/python/index.html
+# Streamlit docs: https://docs.streamlit.io/
+# OpenAI: https://openai.com/
+
 import json
 import pandas as pd
 from snowflake.snowpark.session import Session
@@ -20,13 +24,10 @@ st.set_page_config(
 
 # Set page title, header and links to docs
 st.header("Image Recognition app in Snowflake using Snowpark Python, PyTorch and Streamlit")
-st.caption(f"App developed by [Dash](https://twitter.com/iamontheinet)")
-st.write("[Resources: [Snowpark for Python Developer Guide](https://docs.snowflake.com/en/developer-guide/snowpark/python/index.html)   |   [Streamlit](https://docs.streamlit.io/)   |   [PyTorch Implementation of MobileNet V3](https://github.com/d-li14/mobilenetv3.pytorch)]")
-
 # Function to create new or get existing Snowpark session
 def create_session():
     if "snowpark_session" not in st.session_state:
-        session = Session.builder.configs(json.load(open("connection.json"))).create()
+        session = Session.builder.configs(json.load(open(r"C:\Users\sanja\Downloads\sfguide-snowpark-pytorch-streamlit-openai-image-rec-main (1)\sfguide-snowpark-pytorch-streamlit-openai-image-rec-main\connection.json"))).create()
         st.session_state['snowpark_session'] = session
     else:
         session = st.session_state['snowpark_session']
