@@ -1,7 +1,7 @@
-Title
+Title:
 An image recognition app in Snowflake using Snowpark, Python, PyTorch, Streamlit and OpenAI
 
-Terminologies
+Terminologies:
 
 Snowpark: The set of libraries and runtime in Snowflake provides an intuitive library for querying and processing data at scale.
 
